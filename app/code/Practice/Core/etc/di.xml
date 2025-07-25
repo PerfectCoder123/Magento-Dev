@@ -19,4 +19,16 @@
         </arguments>
     </type>
 
+    <virtualType name="Practice\Core\Model\StandardShippingCalculator" type="Practice\Core\Model\ShippingCalculator">
+        <arguments>
+            <argument name="rate" xsi:type="float">10</argument>
+        </arguments>
+    </virtualType>
+
+    <virtualType name="Practice\Core\Model\FreeShippingCalculator" type="Practice\Core\Model\ShippingCalculator">
+        <arguments>
+            <argument name="rate" xsi:type="float">0</argument>
+        </arguments>
+    </virtualType>
+
 </config>
