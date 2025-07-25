@@ -9,4 +9,14 @@
     </type>
 
      <preference for="Practice\Core\Model\GreetingInterface" type="Practice\Core\Model\HelloGreeting"/>
+
+     <type name="Practice\Core\Model">
+        <arguments>
+            <argument name="validators" xsi:type="array">
+                <item name="length" xsi:type="object">Practice\Core\Model\LengthValidator</item>
+                <item name="alpha" xsi:type="object">Practice\Core\Model\AlphaValidator</item>
+            </argument>
+        </arguments>
+    </type>
+
 </config>
