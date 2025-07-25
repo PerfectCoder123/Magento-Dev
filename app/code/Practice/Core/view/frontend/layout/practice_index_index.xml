@@ -1,12 +1,11 @@
-<?xml version="1.0"?>
-<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
-      
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
     <body>
-        <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\Template" 
-                   name="custom.chatbot"
-                   template="Practice_Core::chatbot.phtml"/>
-        </referenceContainer>
+        <referenceBlock name="content">
+            <block class="Magento\Framework\View\Element\Template" name="custom.customer.greeting" template="Practice_Core::greeting.phtml">
+                <arguments>
+                    <argument name="view_model" xsi:type="object">Practice\Core\ViewModel\MyViewModel</argument>
+                </arguments>
+            </block>
+        </referenceBlock>
     </body>
 </page>
