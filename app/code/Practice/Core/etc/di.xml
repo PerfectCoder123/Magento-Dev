@@ -7,4 +7,6 @@
             <argument name="logger" xsi:type="object">Practice\Core\Model\DemoLogger</argument>
         </arguments>
     </type>
+
+     <preference for="Practice\Core\Model\GreetingInterface" type="Practice\Core\Model\HelloGreeting"/>
 </config>
