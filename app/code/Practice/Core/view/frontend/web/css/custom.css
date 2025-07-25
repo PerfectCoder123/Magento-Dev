@@ -1,0 +1,17 @@
+.highlight-box {
+    background-color: #f9f871;
+    border: 2px dashed #333;
+    padding: 20px;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+body{
+    background: #89e1ff;
+}
+.highlight-box:hover {
+    background-color: #ffe600;
+}

@@ -1,0 +1,13 @@
+<!-- File: view/frontend/templates/parent.phtml -->
+<p>
+    <?php
+    /* @var \Practice\Core\Block\ParentBlock $block */
+         echo $block->getTitle()
+    ?>
+</p>
+
+<div>
+    <h3>Rendering Child Blocks inside Parent:</h3>
+    <div><?= $block->getChildHtml('child1') ?></div>
+    <div><?= $block->getChildHtml('child2') ?></div>
+</div>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Widget:etc/widget.xsd">
+
+    <widget id="custom_widget_box" class="Practice\Core\Block\WidgetBlock">
+        <label translate="true">Custom Message Widget</label>
+        <description translate="true">Widget that displays a custom message box</description>
+
+        <parameters>
+            <parameter name="message" xsi:type="text" required="true" visible="true">
+                <label translate="true">Message to Display</label>
+            </parameter>
+        </parameters>
+
+    </widget>
+</widgets>

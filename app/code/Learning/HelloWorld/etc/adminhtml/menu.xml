@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Learning_HelloWorld::helloworld" title="Hello World" module="Learning_HelloWorld" sortOrder="51" resource="Learning_HelloWorld::helloworld"/>
+        <add id="Learning_HelloWorld::post" title="Manage Posts" module="Learning_HelloWorld" sortOrder="10" action="learning-helloworld/post" resource="Learning_HelloWorld::post" parent="Learning_HelloWorld::helloworld"/>
+        <add id="Learning_HelloWorld::hello_configuration" title="Configuration" module="Learning_HelloWorld" sortOrder="99" parent="Learning_HelloWorld::helloworld" action="adminhtml/system_config/edit/section/helloworld" resource="Learning_HelloWorld::helloworld_configuration"/>
+    </menu>
+</config>
+

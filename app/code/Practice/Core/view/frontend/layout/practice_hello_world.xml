@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+
+    <head>
+        <css src="Practice_Core::css/custom.css"/>
+        <script src="Practice_Core::js/custom.js"/>
+    </head>
+
+    <body>
+        <referenceContainer name="content">
+            <block class="Practice\Core\Block\Hello"
+                   name="practice.hello"
+                   template="Practice_Core::block_hello.phtml"/>
+
+            <!-- Parent Block -->
+            <block class="Practice\Core\Block\ParentBlock" name="parent.block" template="Practice_Core::parent.phtml">
+
+                <!-- Child Block 1 -->
+                <block class="Practice\Core\Block\ChildBlock" name="child.block.1" as="child1" template="Practice_Core::child.phtml"/>
+
+                <!-- Child Block 2 -->
+                <block class="Practice\Core\Block\ChildBlock" name="child.block.2" as="child2" template="Practice_Core::child.phtml"/>
+
+            </block>
+
+            <block class="Magento\Cms\Block\Block" name="custom.cms.welcome">
+                <arguments>
+                    <argument name="block_id" xsi:type="string">welcome_block</argument>
+                </arguments>
+            </block>
+
+        </referenceContainer>
+
+
+    </body>
+</page>
