@@ -39,6 +39,6 @@
         <plugin name="practice_product_name_plugin"
                 type="Practice\Core\Plugin\ProductPlugin"
                 sortOrder="10"
-                disabled="false"/>
+                disabled="true"/>
     </type>
 </config>
