@@ -2,7 +2,7 @@
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:noNamespaceSchemaLocation="urn:magento:framework/Event/etc/events.xsd">
     <event name="customer_login">
-        <observer name="practice_core_log_login" instance="Practice\Core\Observer\CustomerLoginObserver" />
+        <observer name="practice_core_log_login" instance="Practice\Core\Observer\CustomerLoginObserver" disabled = "true" />
     </event>
 
       <event name="practice_greeting_send_before">
