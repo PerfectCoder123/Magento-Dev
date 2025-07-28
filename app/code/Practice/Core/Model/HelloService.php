@@ -2,10 +2,11 @@
 
 namespace Practice\Core\Model;
 
+
 class HelloService
 {
-    public function getGreeting(): string
+    public function composeGreeting(string $greeting, string $name): string
     {
-        return "Hello from Magento 2 CLI (clean architecture)!";
+        return sprintf('%s, %s! 👋', $greeting, $name);
     }
 }

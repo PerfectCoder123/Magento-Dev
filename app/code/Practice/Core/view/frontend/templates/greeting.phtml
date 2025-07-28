@@ -1,2 +1,3 @@
 <?php /**  @var Magento\Framework\View\Element\Template $block*/ ?>
 <p>Hello, <?= $block->getViewModel()->getCustomerName() ?>!</p>
+<p>Hello, <?= $block->getViewModel()->sayHello($block->getViewModel()->getCustomerName()) ?>!</p>

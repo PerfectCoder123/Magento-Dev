@@ -19,11 +19,19 @@
         </arguments>
     </type>
 
-    <type name="Magento\Framework\Console\CommandListInterface">
+        <type name="Magento\Framework\Console\CommandListInterface">
             <arguments>
                 <argument name="commands" xsi:type="array">
                     <item name="hello" xsi:type="object">Practice\Core\Console\Command\HelloCommand</item>
                 </argument>
             </arguments>
         </type>
+
+        <type name="Practice\Core\Logger\Logger">
+        <arguments>
+            <argument name="handlers" xsi:type="array">
+                <item name="custom_handler" xsi:type="object">Practice\Core\Logger\Handler</item>
+            </argument>
+        </arguments>
+    </type>
 </config>
