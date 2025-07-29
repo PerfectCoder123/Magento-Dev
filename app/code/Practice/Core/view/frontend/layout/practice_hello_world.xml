@@ -9,6 +9,7 @@
 
     <body>
 
+         
 
         <referenceContainer name="content">
             <block class="Practice\Core\Block\Hello"
@@ -22,7 +23,7 @@
                 <block class="Practice\Core\Block\ChildBlock" name="child.block.1" as="child1" template="Practice_Core::child.phtml"/>
 
                 <!-- Child Block 2 -->
-                <block class="Practice\Core\Block\ChildBlock" name="child.block.2" as="child2" template="Practice_Core::child.phtml"/>
+                <block class="Practice\Core\Block\ChildBlock" name="child.block.2" as="child2" template="Practice_Core::child.phtml" ifconfig="vendor_section/general/enable"/>
 
             </block>
 

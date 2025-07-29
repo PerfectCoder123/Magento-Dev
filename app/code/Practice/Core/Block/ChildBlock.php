@@ -1,12 +1,23 @@
 <?php
 namespace Practice\Core\Block;
 
-use Magento\Framework\View\Element\Template;
-
-class ChildBlock extends Template
+class ChildBlock extends \Magento\Framework\View\Element\Template
 {
+
+    /**
+     * @param \Magento\Framework\View\Element\Template\Context $context
+     * @param array $data
+     */
+    public function __construct(
+        \Magento\Framework\View\Element\Template\Context $context,
+        public \Magento\Framework\App\Config\ScopeConfigInterface $scopeConfigInterface,
+        array $data = []
+    ) {
+        parent::__construct($context, $data);
+    }
+
     public function getMessage()
     {
-        return "Hello from the nested Child Block!";
+        return $this->scopeConfigInterface->getValue('vendor_section/general/custom_text', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
     }
 }
