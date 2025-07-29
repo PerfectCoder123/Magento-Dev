@@ -19,7 +19,7 @@ class Index implements HttpGetActionInterface
     }
 
     public function execute()
-    {
+     {
           $this->demoLogger->logSomething();
           $this->eventService->sendGreeting("ramesh");
          return $this->resultFactory->create(ResultFactory::TYPE_PAGE);
