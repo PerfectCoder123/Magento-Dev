@@ -30,7 +30,14 @@
                 </arguments>
             </block>
 
+           <block class="Magento\Framework\View\Element\Template" name="my.custom.block" template="Practice_Core::block_hello.phtml">
+                <arguments>
+                    <argument name="my_data" xsi:type="string">Default Data</argument>
+                </arguments>
+            </block>
+           
         </referenceContainer>
+           
 
 
     </body>

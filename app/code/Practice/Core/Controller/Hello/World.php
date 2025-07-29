@@ -16,7 +16,13 @@ class World implements ActionInterface, HttpGetActionInterface
 
     public function execute()
     {
-    return $this->resultFactory->create(ResultFactory::TYPE_PAGE);
+        $resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
+        $block = $resultPage->getLayout()->getBlock('my.custom.block');
+        if ($block) {
+            $block->setMyData('Passed from controller');
+        }
+        return $resultPage;
+
     }
 }
 
