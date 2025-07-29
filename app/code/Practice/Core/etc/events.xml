@@ -3,6 +3,8 @@
         xsi:noNamespaceSchemaLocation="urn:magento:framework/Event/etc/events.xsd">
     <event name="customer_login">
         <observer name="practice_core_log_login" instance="Practice\Core\Observer\CustomerLoginObserver" disabled = "true" />
+                <observer name="practice_core_log_login" instance="Practice\Core\Observer\CustomerLoginObserver" disabled = "false" />
+
     </event>
 
       <event name="practice_greeting_send_before">
