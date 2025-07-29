@@ -17,6 +17,7 @@ class World implements ActionInterface, HttpGetActionInterface
     public function execute()
     {
         $resultPage = $this->resultFactory->create(ResultFactory::TYPE_PAGE);
+        #$resultPage->getConfig()->getTitle()->set(__('Custom Meta Title'));
         $block = $resultPage->getLayout()->getBlock('my.custom.block');
         if ($block) {
             $block->setMyData('Passed from controller');

@@ -8,6 +8,8 @@
     </head>
 
     <body>
+
+
         <referenceContainer name="content">
             <block class="Practice\Core\Block\Hello"
                    name="practice.hello"
