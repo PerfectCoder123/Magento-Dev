@@ -3,6 +3,7 @@
     <group id="default">
         <job instance="Practice\Core\Cron\MyTask" method="execute" name="vendor_module_mytask">
             <schedule>* 30 2 * *</schedule>
+            <config_path>vendor_section/general/enable</config_path>
         </job>
     </group>
 </config>
