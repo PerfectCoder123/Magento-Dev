@@ -10,4 +10,8 @@
       <event name="practice_greeting_send_before">
         <observer name="practice_custom_greeting_logger" instance="Practice\Core\Observer\GreetingLoggerObserver"/>
     </event>
+
+    <event name="layout_generate_blocks_after">
+        <observer name="practice_modify_layout" instance="Practice\Core\Observer\ModifyLayout" />
+    </event>
 </config>
